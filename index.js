@@ -206,8 +206,110 @@ app.get("/recommend", (req, res) => {
   };
   res.send(result);
 });
-// 서버에서 Request 요청대기
+app.get("/tour", (req, res) => {
+  const result = {
+    total: 12,
+    tour_1: {
+      cate: "국적기직항",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t1.jpg",
+      url: "#",
+    },
+    tour_2: {
+      cate: "방콕",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t2.jpg",
+      url: "#",
+    },
+    tour_3: {
+      cate: "국적기직항",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t3.jpg",
+      url: "#",
+    },
+    tour_4: {
+      cate: "방콕",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t4.jpg",
+      url: "#",
+    },
+    tour_5: {
+      cate: "국적기직항",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t1.jpg",
+      url: "#",
+    },
+    tour_6: {
+      cate: "방콕",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t2.jpg",
+      url: "#",
+    },
+    tour_7: {
+      cate: "국적기직항",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t3.jpg",
+      url: "#",
+    },
+    tour_8: {
+      cate: "방콕",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t4.jpg",
+      url: "#",
+    },
+    tour_9: {
+      cate: "국적기직항",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t4.jpg",
+      url: "#",
+    },
+    tour_10: {
+      cate: "방콕",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t4.jpg",
+      url: "#",
+    },
+    tour_11: {
+      cate: "국적기직항",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t4.jpg",
+      url: "#",
+    },
+    tour_12: {
+      cate: "방콕",
+      benefit: "5성급, 차오프라야강 리버뷰",
+      name: "밀레니엄 힐튼 방콕",
+      price: 198798,
+      image: "images/t4.jpg",
+      url: "#",
+    },
+  };
+  res.send(result);
+});
 
+// 서버에서 Request 요청대기
 app.listen(port, () => {
   console.log(`현재 웹서버가 ${port} 로 접속하였습니다.`);
 });
